@@ -1,0 +1,24 @@
+一、 更新
+a) 首先从主库上更新最新的工程文件 这里假设 主库的更新url是https://github.com/cdjflxk/ecshop_flxk.git
+cd flxksoftsite // 切换到工作目录
+注意，如果您是第一次更新的话还需要首先执行以下的命令
+git remote add upstream https://github.com/cdjflxk/flxksoftsite.git
+git pull --rebase upstream master 
+b) 按照该工程的系统架构设计或详细设计，选择一个自己喜欢的一个任务和任务号，当然也可以自己添加一个任务。
+c) git checkout -b [任务名] ，创建一个新的分支，然后开始进行修改。
+i. 注意永远不要再master分支下修改
+ii. git branch //该命令可以查看所有的分支
+d) 修改完成后，使用以下命令进行提交
+		git status //查看工作目录的状态
+		git add *//添加修改的内容,进入预提交状态
+		git commit –m “提交的原因” //一般提交的原因格式如下 [任务号]+任务描述
+		git push origin [任务名]  //进行推送
+二、 请求审查合并
+a) ,登录 github ,此时在自己fork的respostory可以看到自己推送的内容
+b) 点击 pull request ,请求review
+三、 代码讨论
+a) 在有分歧意见的代码处进行讨论。
+四、 Git 帮助 命令
+		Git –help //查看所有的命令
+		Git [具体命令] –help //查看具体命令的帮助							
+
