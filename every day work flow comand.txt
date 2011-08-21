@@ -1,0 +1,14 @@
+git checkout master //切换到主分支。
+一 、git pull --rebase upstream master 
+二 、 git checkout -b [任务名]  /git checkout [任务名] 表示切换任务
+三 、 git status
+四 、git add *
+五、git commit –m “提交的原因” 
+六、git push origin [任务名] 
+
+注释
+1 git reset  //撤销提交
+2 git log -n //查看指定数目的日志
+3 git brancd //查看分支
+4 git diff  //比较文件
+5 gitk //图像提交历史
